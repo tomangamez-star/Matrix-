@@ -5,21 +5,13 @@
         android:icon="@drawable/ic_montai"
         android:allowBackup="false"
         android:supportsRtl="true">
-        <activity
-            android:name=".GyroscopeActivity"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-        <activity
-            android:name=".DeviceDashboardActivity"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="true">
+        <activity android:name=".FullGyroActivity" android:screenOrientation="landscape" android:exported="false" />
+        <activity android:name=".GyroscopeActivity" android:screenOrientation="portrait" android:exported="false" />
+        <activity android:name=".DeviceDashboardActivity" android:screenOrientation="portrait" android:exported="false" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
