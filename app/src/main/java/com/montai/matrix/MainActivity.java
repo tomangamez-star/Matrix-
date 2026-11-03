@@ -65,6 +65,15 @@ public class MainActivity extends Activity {
         root.addView(section("DEVICE SNAPSHOT"));
         root.addView(infoCard(deviceInfo()));
 
+        root.addView(section("COMMAND CENTRE"));
+        Button dashboard = button("▣  OPEN DEVICE COMMAND CENTRE");
+        dashboard.setOnClickListener(v -> startActivity(new Intent(this, DeviceDashboardActivity.class)));
+        root.addView(dashboard);
+
+        Button gyro = button("◎  OPEN GYROSCOPE LAB");
+        gyro.setOnClickListener(v -> startActivity(new Intent(this, GyroscopeActivity.class)));
+        root.addView(gyro);
+
         root.addView(section("COMMAND DECK"));
         String[][] cmds = {
             {"help","Show available commands"},{"scan","Run a local device snapshot"},{"whoami","Display terminal identity"},
