@@ -3,6 +3,7 @@ package com.montai.matrix;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.*;
+import android.graphics.drawable.GradientDrawable;
 import android.hardware.*;
 import android.os.Bundle;
 import android.view.*;
